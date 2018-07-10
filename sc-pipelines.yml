@@ -9,7 +9,7 @@ test:
     - name: config-server
       type: broker
       broker: p-config-server
-      plan: free
+      plan: trial
       params:
         git:
           uri: https://github.com/xudegui/app-config
@@ -22,10 +22,10 @@ test:
     - name: service-registry
       type: broker
       broker: p-service-registry
-      plan: free
+      plan: trial
       useExisting: true
     - name: circuit-breaker-dashboard
       type: broker
       broker: p-circuit-breaker-dashboard
-      plan: free
+      plan: trial
       useExisting: true
